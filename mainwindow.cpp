@@ -7,7 +7,7 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    this->setWindowTitle("@APP_ID@");
+    this->setWindowTitle("demo");
     auto parentRect = QGuiApplication::primaryScreen()->availableGeometry();
     if (this->parentWidget()) {
         parentRect = this->parentWidget()->geometry();
