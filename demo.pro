@@ -4,6 +4,9 @@
 #
 #-------------------------------------------------
 
+QMAKE_CFLAGS += $$(CFLAGS)
+QMAKE_CXXFLAGS += $$(CXXFLAGS)
+
 QT       += core gui
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
