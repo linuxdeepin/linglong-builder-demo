@@ -1,0 +1,23 @@
+version: "1"
+
+package:
+  id: org.deepin.demo
+  name: demo
+  kind: app
+  version: 1.0.0.0
+  description: |
+    A simple demo app.
+
+command:
+  - demo
+
+base: org.deepin.base/23.1.0
+runtime: org.deepin.runtime.dtk/23.1.0
+
+build: |
+  rm -rf build || true
+  mkdir build
+  cd build
+  qmake ..
+  make
+  make install
